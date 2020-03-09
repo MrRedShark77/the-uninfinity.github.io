@@ -1,0 +1,100 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="icon.png">
+    <title>The Uninfinity</title>
+</head>
+<body style="font-family: mono;">
+    <div class="menu" style="text-align: center;" >
+        <div class="up" style="font-size: 12px;">
+            <div>
+                <p>
+                    Your number is <span id="money" style="font-size: 25px;"></span>
+                </p>
+            </div>
+            <div id="mps"></div>
+        </div>
+        <div class="menutab" style="font-size: 20px; font-weight: bold;">
+            <div class="mTab" onclick="showTab(1, 'mt', maxNumTabs[1])">Numbers</div>
+            <div class="mTab" id="u1" onclick="showTab(2, 'mt', maxNumTabs[1])" style="border: 2px solid darkgoldenrod; background-color: black; color: yellow;">Infinity</div>
+            <div class="mTab" onclick="showTab(3, 'mt', maxNumTabs[1])">Options</div>
+            <div class="mTab" onclick="showTab(4, 'mt', maxNumTabs[1])">Achievements</div>
+        </div>
+        <div class="tabs" id="mt1">
+            <div class="numbers">
+                <div class="number" id="num1" onclick="buyNumber(1)"></div>
+                <div class="number" id="num2" onclick="buyNumber(2)"></div>
+                <div class="number" id="num3" onclick="buyNumber(3)"></div>
+                <div class="number" id="num4" onclick="buyNumber(4)"></div>
+                <div class="number" id="num5" onclick="buyNumber(5)"></div>
+            </div>
+            <div class="inf">
+                <div class="infinite" id="inf" onclick="gainInf()"></div>
+            </div>
+        </div>
+        <div class="tabs" id="mt2">
+            <div>
+                <div id="infCount"></div>
+                <div>
+                    <p>
+                        You have <span id="ip" style="font-size: 25px; color: darkgoldenrod;"></span> infinity points
+                    </p>
+                </div>
+                <div class="iupgs" style="font-size: 15px;">
+                    <div class="iupg" id="iu1" onclick="buyIUpgrade(1)"></div>
+                </div>
+                <div id="nextunlock"></div>
+            </div>
+        </div>
+        <div class="tabs" id="mt3">
+            <div>3</div>
+        </div>
+        <div class="tabs" id="mt4">
+            <table class="rows" style="margin: auto;">
+                <tbody>
+                    <tr id="row1">
+                        <td>
+                            <div id="r1" style="background-image: url(images/1.png)" class="ra" title="Buy Multi-Numbers"></div>
+                        </td>
+                        <td>
+                            <div id="r2" style="background-image: url(images/2.png)" class="ra" title="Buy Meta-Numbers"></div>
+                        </td>
+                        <td>
+                            <div id="r3" style="background-image: url(images/3.png)" class="ra" title="Buy Mega-Numbers"></div>
+                        </td>
+                        <td>
+                            <div id="r4" style="background-image: url(images/4.png)" class="ra" title="Buy Giga-Numbers"></div>
+                        </td>
+                        <td>
+                            <div id="r5" class="ra" title="Buy Tera-Numbers"></div>
+                        </td>
+                        <td>
+                            <div id="r6" class="ra" title="Buy Peta-Numbers"></div>
+                        </td>
+                        <td>
+                            <div id="r7" class="ra" title="Buy Exa-Numbers"></div>
+                        </td>
+                        <td>
+                            <div id="r8" class="ra" title="Buy Zetta-Numbers"></div>
+                        </td>
+                    </tr>
+                    <tr id="row2">
+                        <td>
+                            <div id="r9" class="ra" title="Buy Yotta-Numbers"></div>
+                        </td>
+                        <td>
+                            <div id="r10" style="background-image: url(images/10.png)" class="ra" title="Go to Infinity. Reward: Start with 100 numbers"></div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+<script src="javascript/game.js"></script>
+<script src="javascript/upgrades.js"></script>
+<script src="javascript/push.js"></script>
+<script src="javascript/jquery.js"></script>
+</html>
